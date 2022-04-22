@@ -38,7 +38,7 @@ class GameScene {
 	void Update();
 
 	//ワールドトランスフォーム
-	WorldTransform worldTransform_;
+	WorldTransform worldTransform_[100];
 
 	//ビュープロジェクション
 	ViewProjection viewProjection_;
@@ -54,6 +54,9 @@ class GameScene {
 	Audio* audio_ = nullptr;
 	DebugText* debugText_ = nullptr;
 	uint32_t textureHandle_ = 0;
+
+	//カメラ上方向の角度 
+	float viewAngle = 0.0f;
 
 	
 	// MODEL
